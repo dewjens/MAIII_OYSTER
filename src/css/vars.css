@@ -1,3 +1,13 @@
 :root {
-  --bg-color: #fafafa;
+  --bg-color: #F1E5C0;
+  --font-color: #00;
+
+  --title-font: 'Billy Ohio';
+  --title-size: 5rem;
+
+  --text-font: 'Helvetica';
+  --text-size: 1.6rem;
+
+  --input-text-size: 2rem;
+  --border: .1rem solid white;
 }
