@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 <head>
 
   <meta charset="UTF-8">
@@ -49,10 +49,10 @@
             <a class="navlink uppercase" href="#babeleir">Babeleir De Bretagne</a>
           </li>
           <li>
-            <a class="navlink  uppercase" href="#">Our Project</a>
+            <a class="navlink  uppercase" href="#bbp">Our Project</a>
           </li>
           <li>
-            <a class="navlink uppercase" href="about.html">
+            <a class="navlink uppercase" href="#newyear">
               <picture>
                 <source srcset="assets/img/makeyournewyear.webp" type="image/webp">
                 <source srcset="assets/img/makeyournewyear.png" type="image/png">
@@ -71,6 +71,7 @@
         <h3 class="landing-undertitle">Taste the sea</h3>
         <div class="underlinedeco"></div>
         <article class="landing-text">
+          <h2 class="hidden">Babeleir De Bretagne</h2>
           <p class="landing-p">
             De Babeleir de Bretagne, <span class="highlight">een uniek stout bier</span> met een toets
             <span class="highlight">van oesters en chocolade</span>, het bier is gebrouwen met de
@@ -102,7 +103,7 @@
       <div class="babeleir-text">
         <h2 class="babeleir-title uppercase">Meet our handcrafted beer</h2>
         <h3 class="babeleir-undertitle">Babeleir <br/>
-        </br/> De Bretagne</h3>
+        <br/> De Bretagne</h3>
         <span class="mini-title">oyster Stout</span>
         <picture>
           <source srcset="assets/img/deco-babeleir.webp" type="image/webp">
@@ -129,14 +130,15 @@
             </li>
           </ul>
           <picture>
-            <source srcset="" type="image/webp">
-            <source srcset="" type="image/png">
-            <img src="" alt="Babeleir alc vol">
+            <source srcset="assets/img/alc-perc.webp" type="image/webp">
+            <source srcset="assets/img/alc-perc.png" type="image/png">
+            <img src="assets/img/alc-perc.png" alt="Babeleir alc vol">
           </picture>
         </article>
       </div>
     </section>
-    <section class="bbp">
+    <section class="bbp" id="bbp">
+      <h2 class="hidden">Brussels Beer Project</h2>
       <div class="bbp-container">
         <article class="beerproject-text">
           <h2 class="bbp-title">Our Brussels Beer Project</h2>
@@ -160,98 +162,141 @@
           <img src="assets/img/mannekepis.png" alt="manneke pis">
         </picture>
       </div>
+      <div class="hand">
+      </div>
     </section>
-    <section class="newyear">
-      <h2 class="newyear-title">make your new year with babeleir</h2>
+    <section class="newyear" id="newyear">
+      <h2 class="newyear-title uppercase">make your new year with babeleir</h2>
       <div>
-        <picture>
-          <source srcset="" type="image/webp">
-          <source srcset="" type="image/png">
-          <img src="" alt="underliner">
-        </picture>
         <article>
-          <h2>wat kan je winnen?</h2>
-          <p>
-            Droom je ervan om in het midden van
-            de zee jouw glaasje te heffen voor
-            nieuwjaar? Wel dat kan!
-          </p>
-          <p>
-            Dankzij Babeleir kan jij ervoor zorgen
-            dat jij en je groep genieten van een
-            uitgebreid schaaldierenbuffet op
-            onze yacht terwijl jullie je Babeleir
-            heffen op het nieuwe jaar!
-          </p>
+          <div class="winnensection">
+            <picture>
+              <source srcset="assets/img/winnen.webp" type="image/webp">
+              <source srcset="assets/img/winnen.png" type="image/png">
+              <img src="assets/img/winnen.png" alt="prijs">
+            </picture>
+            <div>
+              <h2 class="winnentitle uppercase">wat kan je winnen?</h2>
+              <picture>
+                <source srcset="assets/img/underline-winnen.webp" type="image/webp">
+                <source srcset="assets/img/underline-winnen.png" type="image/png">
+                <img src="assets/img/underline-winnen.png" alt="underliner">
+              </picture>
+              <p class="winnen-p">
+                Droom je ervan om in het midden van
+                de zee jouw glaasje te heffen voor
+                nieuwjaar? Wel dat kan!
+              </p>
+              <p class="winnen-p">
+                Dankzij Babeleir kan jij ervoor zorgen
+                dat jij en je groep genieten van een
+                uitgebreid <span class="highlight-pink">schaaldierenbuffet</span> op
+                onze <span class="highlight-pink">yacht</span> terwijl jullie je Babeleir
+                heffen op het nieuwe jaar!
+              </p>
+            </div>
+          </div>
         </article>
       </div>
-      <article>
-        <h2>wat moet je hiervoor doen?</h2>
-        <span>
+      <article class="doenarticle">
+        <h2 class="winnentitle uppercase">wat moet je hiervoor doen?</h2>
+        <span class="pink">
           geen wedstrijd? geen fun!
         </span>
-        <p>Vul je gegevens in en upload een kickass onderwaterfoto van jou en je groep samen met een Babeleir.</p>
-        <span>
+        <p class="doen-p">Vul je gegevens in en upload een kickass onderwaterfoto van jou en je groep samen met een Babeleir.</p>
+        <span class="blue">
           En maak kans om te winnen
         </span>
       </article>
-      <form class="newyearform" action="" method="">
+      <form class="newyearform" action="#" method="">
         <div class="row">
           <div class="column">
             <span class="inputtoplabel uppercase">Voornaam</span>
-            <input class="forminput" type="text" name="voornaam"><br>
+            <input class="forminput" type="text" name="voornaam" placeholder="Babeleir"><br>
+            <span class="error"></span>
           </div>
-          <div class="column">
+          <div class="column right">
             <span class="inputtoplabel uppercase">Achternaam</span>
-            <input class="forminput" type="text" name="achternaam"><br>
+            <input class="forminput" type="text" name="achternaam" placeholder="De Bretagne"><br>
+            <span class="error"></span>
           </div>
         </div>
         <div class="row">
           <div class="column">
             <span class="inputtoplabel uppercase">email</span>
-            <input class="forminput" type="text" name="email"><br>
+            <input class="forminput" type="text" name="email" placeholder="babeleir@bretagne.com"><br>
+            <span class="error"></span>
           </div>
-          <div class="column">
+          <div class="column right">
             <span class="inputtoplabel uppercase">gsm</span>
-            <input class="forminput" type="text" name="gsm"><br>
+            <input class="forminput" type="number" name="gsm" placeholder="0462424146"><br>
+            <span class="error"></span>
           </div>
         </div>
         <div class="row">
           <div class="column">
             <span class="inputtoplabel uppercase">straat</span>
-            <input class="forminput" type="text" name="straat"><br>
+            <input class="forminput" type="text" name="straat" placeholder="babeleirstraat"><br>
+            <span class="error"></span>
           </div>
-          <div class="column">
-            <span class="inputtoplabel uppercase">nummer</span>
-            <input class="forminput" type="text" name="huisnummer"><br>
+          <div class="column right">
+            <span class="inputtoplabel uppercase number">nummer</span>
+            <input class="forminput number" type="number" name="huisnummer" placeholder="54"><br>
+            <span class="error"></span>
           </div>
         </div>
         <div class="row">
           <div class="column">
             <span class="inputtoplabel uppercase">stad</span>
-            <input class="forminput" type="text" name="stad"><br>
+            <input class="forminput" type="text" name="stad" placeholder="Bretagne"><br>
+            <span class="error"></span>
           </div>
-          <div class="column">
+          <div class="column right">
             <span class="inputtoplabel uppercase">postcode</span>
-            <input class="forminput" type="text" name="postcode"><br>
+            <input class="forminput number" type="number" name="postcode" placeholder="8159"><br>
+            <span class="error"></span>
           </div>
         </div>
         <div class="row">
           <div class="column">
             <span class="inputtoplabel uppercase">Aantal personen</span>
-            <input class="forminput" type="text" name="aantal"><br>
+            <input class="forminput number" type="number" name="aantal" placeholder="9"><br>
+            <span class="error"></span>
           </div>
-          <div class="column">
+          <div class="column right">
             <span class="inputtoplabel uppercase">upload je kickass foto</span>
-            <input class="forminput" type="text" name="upload"><br>
+            <input class="uploadbtn" type="file" name="fileToUpload" id="fileToUpload">
+            <span class="error"></span>
           </div>
         </div>
-        <input type="submit" value="Submit">
+        <input class="submit uppercase" type="submit" value="Make your New Year">
       </form>
+      <div class="beerleft">
+        <picture>
+          <source srcset="assets/img/beer-left.webp" type="image/webp">
+          <source srcset="assets/img/beer-left.png" type="image/png">
+          <img src="assets/img/beer-left.png" alt="Brussels Beer Project">
+        </picture>
+      </div>
+      <div class="beerright">
+        <picture>
+          <source srcset="assets/img/beer-right.webp" type="image/webp">
+          <source srcset="assets/img/beer-right.png" type="image/png">
+          <img src="assets/img/beer-right.png" alt="Brussels Beer Project">
+        </picture>
+      </div>
     </section>
   </main>
 <footer class="bbp-footer">
-  allo
+  <div class="footer-container">
+    <a class="navlink uppercase" target="_blank" href="http://www.brusselsbeerproject.be">
+      <picture>
+        <source srcset="assets/img/bbp-icon.webp" type="image/webp">
+        <source srcset="assets/img/bbp-icon.png" type="image/png">
+        <img src="assets/img/bbp-icon.png" alt="Brussels Beer Project">
+      </picture>
+    </a>
+  </div>
 </footer>
 </body>
 

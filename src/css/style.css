@@ -50,6 +50,11 @@ h1 {
   text-shadow: .1rem .2rem 1rem rgba(0, 0, 0, .5);
 }
 
+.navlink:hover {
+  color: white;
+  cursor: pointer;
+}
+
 .landing {
   background-image: url(../assets/img/header-bg.jpg);
   background-repeat: no-repeat;
@@ -67,7 +72,7 @@ h1 {
 }
 
 .landing-title {
-  font-family: 'Billy Ohio';
+  font-family: var(--title-font);
   font-size: 8.8rem;
   transform: rotate(-8deg);
   margin-top: -25rem;
@@ -75,7 +80,7 @@ h1 {
 }
 
 .landing-undertitle {
-  font-family: 'Billy Ohio';
+  font-family: var(--title-font);
   font-size: 5rem;
   margin-top: 5rem;
   text-shadow: -.2rem .2rem rgba(254, 208, 80, 1);
@@ -84,6 +89,11 @@ h1 {
 .highlight {
   font-style: italic;
   box-shadow: inset -.1rem -.67rem rgba(254, 208, 80, 1);
+}
+
+.highlight-pink {
+  font-style: italic;
+  box-shadow: inset -.1rem -.67rem rgb(217, 95, 174);
 }
 
 .link-try {
@@ -183,10 +193,11 @@ h1 {
 
 .babeleirneon {
   margin-top: 30rem;
+  animation: float 3s ease-in-out infinite;
 }
 
 .babeleir-text {
-  margin-top: 15rem;
+  margin-top: 8rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -195,15 +206,22 @@ h1 {
 
 .babeleir-undertitle {
   color: white;
-  font-size: 11rem;
-  font-family: 'Billy Ohio';
-  line-height: 5rem;
-  margin-top: 6rem;
+  font-size: 9rem;
+  font-family: var(--title-font);
+  line-height: 4rem;
+  margin-top: 1rem;
+  height: 20rem;
+  padding-top: 4rem;
+  background: -webkit-linear-gradient(#269ec6, #b85093);
+  /* stylelint-disable */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  /* stylelint-enable */
 }
 
 .mini-title {
   color: rgb(217, 95, 174);
-  margin-top: 4rem;
+  margin-top: 2rem;
   font-size: 2rem;
   font-family: var(--text-font);
   font-weight: 600;
@@ -212,7 +230,7 @@ h1 {
 
 .spectitle {
   color: rgb(38, 158, 198);
-  font-family: 'Billy Ohio';
+  font-family: var(--title-font);
   font-size: 3.5rem;
 }
 
@@ -236,7 +254,9 @@ h1 {
   display: flex;
   justify-content: center;
   flex-direction: row;
-  margin-top: -10rem;
+  margin-top: -12rem;
+  position: relative;
+  z-index: 3;
 }
 
 .bbp-container {
@@ -266,6 +286,33 @@ h1 {
   height: 2rem;
 }
 
+.hand {
+  background-image: url(../assets/img/arm.png);
+  background-repeat: no-repeat;
+  position: absolute;
+  background-size: cover;
+  background-position: center;
+  height: 45.2rem;
+  width: 30.3rem;
+  margin-top: 60rem;
+  margin-left: -75rem;
+}
+
+@keyframes float {
+
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-3rem);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
 .mannekepis {
   margin-top: 14rem;
   margin-left: 20rem;
@@ -273,7 +320,7 @@ h1 {
 }
 
 .bbp-title {
-  font-family: 'Billy Ohio';
+  font-family: var(--title-font);
   font-size: 8rem;
   margin-top: -25rem;
   text-shadow: -.3rem .3rem rgba(254, 208, 80, 1), -.5rem .5rem white;
@@ -294,9 +341,76 @@ h1 {
   background-size: cover;
   height: 141.7rem;
   display: flex;
-  justify-content: center;
   flex-direction: column;
   align-items: center;
+  z-index: 2;
+  margin-top: -5rem;
+}
+
+.winnensection {
+  display: flex;
+  justify-content: space-between;
+  width: 96rem;
+  margin-top: 3rem;
+  color: white;
+}
+
+.winnentitle {
+  font-family: var(--text-font);
+  font-weight: bold;
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 1rem;
+  background: -webkit-linear-gradient(#269ec6, #b85093);
+  /* stylelint-disable */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  /* stylelint-enable */
+}
+
+.newyear-title {
+  margin-top: 15rem;
+  font-family: var(--title-font);
+  font-size: 6rem;
+  background: -webkit-linear-gradient(#269ec6, #b85093);
+  /* stylelint-disable */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  /* stylelint-enable */
+}
+
+.doenarticle {
+  margin-top: 6rem;
+  color: white;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.pink {
+  color: rgb(217, 95, 174);
+  font-weight: 600;
+  font-size: 2rem;
+}
+
+.blue {
+  color: rgb(38, 158, 198);
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.doen-p {
+  width: 50rem;
+  margin-top: 1rem;
+  line-height: 1.8rem;
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+.winnen-p {
+  width: 35rem;
+  font-weight: 500;
+  margin-top: 2rem;
+  line-height: 2rem;
 }
 
 .inputtoplabel {
@@ -312,17 +426,89 @@ h1 {
 
 .row {
   display: flex;
+  width: 70rem;
+  margin-top: 1rem;
+}
+
+.newyearform {
+  margin-top: 5rem;
 }
 
 .forminput {
+  color: white;
+  font-size: 1.5rem;
+  padding: .5rem;
+  margin: .2rem;
   background: none;
   border-width: .2rem;
-  height: 3rem;
-  width: 20rem;
+  height: 4rem;
+  width: 30rem;
   border-style: solid;
   border-image: linear-gradient(to bottom, rgb(25, 158, 200), rgb(233, 96, 185)) 10 10%;
 }
 
+.number {
+  width: 10rem;
+}
+
+.right {
+  margin-left: 5rem;
+}
+
+.submit {
+  background-color: rgb(233, 96, 185);
+  border: none;
+  color: white;
+  border-radius: 0;
+  padding: 1.8rem;
+  box-shadow: inset .4rem -.4rem rgb(38, 158, 198);
+  font-family: var(--text-font);
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin-top: 3rem;
+}
+
+.uploadbtn {
+  background-color: rgb(184, 80, 147);
+  height: 4rem;
+  color: white;
+  display: flex;
+  padding-top: 1rem;
+  padding-left: 2rem;
+  width: 19rem;
+}
+
 .bbp-footer {
+  z-index: 3;
+  margin-top: -3rem;
   height: 10rem;
+  background-image: url(../assets/img/footer-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.beerleft {
+  z-index: 1;
+  margin-top: 70rem;
+  margin-left: -85rem;
+  position: absolute;
+}
+
+.error {
+  color: red;
+}
+
+.beerright {
+  z-index: 1;
+  margin-top: 70rem;
+  margin-left: 85rem;
+  position: absolute;
+}
+
+.footer-container {
+  margin-top: 3rem;
+  width: 96rem;
 }
