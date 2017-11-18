@@ -60,4 +60,269 @@ h1 {
   margin-top: -12rem;
   z-index: 1;
   padding-top: 20rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.landing-title {
+  font-family: 'Billy Ohio';
+  font-size: 8.8rem;
+  transform: rotate(-8deg);
+  margin-top: -25rem;
+  text-shadow: -.3rem .3rem rgba(254, 208, 80, 1), -.5rem .5rem white;
+}
+
+.landing-undertitle {
+  font-family: 'Billy Ohio';
+  font-size: 5rem;
+  margin-top: 5rem;
+  text-shadow: -.2rem .2rem rgba(254, 208, 80, 1);
+}
+
+.highlight {
+  font-style: italic;
+  box-shadow: inset -.1rem -.67rem rgba(254, 208, 80, 1);
+}
+
+.link-try {
+  border-radius: 2rem;
+  border: .3rem solid black;
+  font-size: 1.8rem;
+  padding: .6rem;
+  font-family: var(--text-font);
+  font-weight: 600;
+  text-decoration: none;
+  color: black;
+  text-shadow: -.15rem .25rem white;
+  z-index: 10;
+  position: relative;
+}
+
+.link-try::before {
+  cursor: pointer;
+  content: ' ';
+  position: absolute;
+  z-index: -1;
+  top: .2rem;
+  left: -.7rem;
+  right: -.1rem;
+  bottom: -.7rem;
+  border: .3rem solid rgba(254, 208, 80, 1);
+  border-radius: 2rem;
+}
+
+.link-try:hover {
+  color: white;
+  text-shadow: -.15rem .25rem black;
+}
+
+.landing-p {
+  font-family: var(--text-font);
+  font-weight: 600;
+  font-size: 1.8rem;
+  margin-top: 2rem;
+  width: 50rem;
+  line-height: 2.2rem;
+  margin-bottom: 3rem;
+}
+
+.underlinedeco {
+  background-image: url(../assets/img/taste-underline.png);
+  height: 2rem;
+  width: 15rem;
+  margin-top: .7rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.landing-content {
+  text-align: left;
+  width: 55rem;
+  margin-left: 4rem;
+}
+
+.babeleir {
+  background-image: url(../assets/img/babeleir-background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 123.2rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+}
+
+.landingimage {
+  z-index: 2;
+  margin-left: 9rem;
+  margin-top: 20.5rem;
+}
+
+.waterlanding {
+  background-image: url(../assets/img/water-rocks.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 47rem;
+  position: absolute;
+  width: 100vw;
+  min-width: 1700px;
+  margin-top: 32rem;
+}
+
+.babeleir-title {
+  color: rgb(42, 155, 195);
+  font-family: var(--text-font);
+  font-weight: 600;
+  font-size: 3rem;
+  text-shadow: -.2rem .2rem rgb(233, 96, 185);
+}
+
+.babeleirneon {
+  margin-top: 30rem;
+}
+
+.babeleir-text {
+  margin-top: 15rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.babeleir-undertitle {
+  color: white;
+  font-size: 11rem;
+  font-family: 'Billy Ohio';
+  line-height: 5rem;
+  margin-top: 6rem;
+}
+
+.mini-title {
+  color: rgb(217, 95, 174);
+  margin-top: 4rem;
+  font-size: 2rem;
+  font-family: var(--text-font);
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+
+.spectitle {
+  color: rgb(38, 158, 198);
+  font-family: 'Billy Ohio';
+  font-size: 3.5rem;
+}
+
+.specdesc {
+  color: rgb(217, 95, 174);
+  font-family: var(--text-font);
+  font-weight: 500;
+  font-size: 1.6rem;
+  max-width: 30rem;
+  line-height: 2rem;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+.bbp {
+  background-image: url(../assets/img/background-bbp.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 97.2rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  margin-top: -10rem;
+}
+
+.bbp-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  max-width: 96rem;
+}
+
+.projectlink {
+  margin-top: 8rem;
+  margin-left: -53rem;
+  padding: 1rem;
+}
+
+.beerproject-text {
+  margin-left: -40rem;
+  margin-top: 20rem;
+}
+
+.underline-bbp {
+  background-image: url(../assets/img/underline-title.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-top: 1rem;
+  height: 2rem;
+}
+
+.mannekepis {
+  margin-top: 14rem;
+  margin-left: 20rem;
+  position: absolute;
+}
+
+.bbp-title {
+  font-family: 'Billy Ohio';
+  font-size: 8rem;
+  margin-top: -25rem;
+  text-shadow: -.3rem .3rem rgba(254, 208, 80, 1), -.5rem .5rem white;
+}
+
+.beerproject-p {
+  margin-top: 3rem;
+  line-height: 2rem;
+  width: 50rem;
+  font-size: 1.8rem;
+  font-family: var(--text-font);
+  font-weight: 600;
+}
+
+.newyear {
+  background-image: url(../assets/img/nye-background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 141.7rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.inputtoplabel {
+  color: white;
+  font-family: var(--text-font);
+  font-weight: bold;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+.row {
+  display: flex;
+}
+
+.forminput {
+  background: none;
+  border-width: .2rem;
+  height: 3rem;
+  width: 20rem;
+  border-style: solid;
+  border-image: linear-gradient(to bottom, rgb(25, 158, 200), rgb(233, 96, 185)) 10 10%;
+}
+
+.bbp-footer {
+  height: 10rem;
 }

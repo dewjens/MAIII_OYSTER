@@ -1,0 +1,7 @@
+@font-face {
+  font-family: 'Billy Ohio';
+  src: url('../assets/fonts/billy_ohio-webfont.ttf'); /* IE9 Compat Modes */
+  src: url('../assets/fonts/billy_ohio-webfont.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../assets/fonts/billy_ohio-webfont.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../assets/fonts/billy_ohio-webfont.ttf')  format('truetype') /* Safari, Android, iOS */
+}

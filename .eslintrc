@@ -1,3 +1,4 @@
 {
-  "extends": "devine"
+  "extends": "devine",
+  "property-no-vendor-prefix": true
 }

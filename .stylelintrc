@@ -1,4 +1,5 @@
 {
   "ignoreFiles": "./dist/**/*.css",
-  "extends": "stylelint-config-devine"
+  "extends": "stylelint-config-devine",
+  "property-no-vendor-prefix": false
 }

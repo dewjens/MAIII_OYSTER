@@ -13,8 +13,8 @@
     // https://github.com/typekit/webfontloader/blob/master/README.md
     WebFontConfig = {
       custom: {
-        families: ['Billy Ohio', 'My Other Font:n4,i4,n7'],
-        urls: ['/fonts.css']
+        families: ['Billy Ohio'],
+        urls: ['css/fonts.css']
       }
     };
 
@@ -66,55 +66,66 @@
   </header>
   <main>
     <section class="landing">
-      <h2 class="landing-title">Babeleir De Bretagne</h2>
-      <h3 class="landing-undertitle">Taste the sea</h3>
-      <article class="landing-text">
-        <p class="landing-p">
-          De Babeleir de Bretagne, een uniek stout bier met een toets
-          van oesters en chocolade, het bier is gebrouwen met de
-          oesters van oesterkwekerij Prat Ar commun in Bretagne.
-          Laat je overweldigen door de smaak van de zee.
-        </p>
-        <p class="landing-p">
-          Het bier wordt terug door ons, het Brussels Beer Project
-          het leven opnieuw ingeblazen. Ontdek het bier nu,
-          of ontdek onze nieuwjaarsactie!
-        </p>
-      </article>
-      <a class="link-try">Try the beer</a>
+      <div class="landing-content">
+        <h2 class="landing-title">Babeleir De Bretagne</h2>
+        <h3 class="landing-undertitle">Taste the sea</h3>
+        <div class="underlinedeco"></div>
+        <article class="landing-text">
+          <p class="landing-p">
+            De Babeleir de Bretagne, <span class="highlight">een uniek stout bier</span> met een toets
+            <span class="highlight">van oesters en chocolade</span>, het bier is gebrouwen met de
+            oesters van oesterkwekerij Prat Ar commun in Bretagne.
+            Laat je overweldigen door de smaak van de zee.
+          </p>
+          <p class="landing-p">
+            Het bier wordt terug door ons, <span class="highlight">het Brussels Beer Project</span>
+            het leven opnieuw ingeblazen. Ontdek het bier nu,
+            of ontdek onze <span class="highlight">nieuwjaarsactie!</span>
+          </p>
+        </article>
+        <a class="link-try uppercase" href="#babeleir">Try the beer</a>
+      </div>
+      <picture class="landingimage">
+        <source srcset="assets/img/fles-header.webp" type="image/webp">
+        <source srcset="assets/img/fles-header.png" type="image/png">
+        <img src="assets/img/fles-header.png" alt="Babeleir">
+      </picture>
+      <div class="waterlanding">
+      </div>
     </section>
-    <section class="Babeleir">
-      <picture>
-        <source srcset="" type="image/webp">
-        <source srcset="" type="image/png">
-        <img src="" alt="Babeleir De Bretagne promo">
+    <section class="babeleir" id="babeleir">
+      <picture class="babeleirneon">
+        <source srcset="assets/img/babeleirneon.webp" type="image/webp">
+        <source srcset="assets/img/babeleirneon.png" type="image/png">
+        <img src="assets/img/babeleirneon.png" alt="Babeleir De Bretagne promo">
       </picture>
       <div class="babeleir-text">
-        <h2 class="babeleir-title">Meet our handcrafted beer</h2>
-        <h3 class="babeleir-undertitle">Babeleir De Bretagne</h3>
-        <span>oyster stout</span>
+        <h2 class="babeleir-title uppercase">Meet our handcrafted beer</h2>
+        <h3 class="babeleir-undertitle">Babeleir <br/>
+        </br/> De Bretagne</h3>
+        <span class="mini-title">oyster Stout</span>
         <picture>
-          <source srcset="" type="image/webp">
-          <source srcset="" type="image/png">
-          <img src="" alt="Babeleir De Bretagne promo">
+          <source srcset="assets/img/deco-babeleir.webp" type="image/webp">
+          <source srcset="assets/img/deco-babeleir.png" type="image/png">
+          <img src="assets/img/deco-babeleir.png" alt="deco">
         </picture>
         <article class="babeleir-desc">
           <ul>
             <li>
-              <h2>ocean taste</h2>
-              <p>Babeleir laat een lichte zoutige, diepe mineralen smaak na.</p>
+              <h2 class="spectitle uppercase">ocean taste</h2>
+              <p class="specdesc">Babeleir laat een lichte zoutige, diepe mineralen smaak na.</p>
             </li>
             <li>
-              <h2>chocolate dream</h2>
-              <p>chocoladekleurig met een sterk aroma van pralines en zwarte chodolade.</p>
+              <h2 class="spectitle uppercase">chocolate dream</h2>
+              <p class="specdesc">chocoladekleurig met een sterk aroma van pralines en zwarte chodolade.</p>
             </li>
             <li>
-              <h2>bretagne oysters</h2>
-              <p>Afgekookt met oesters van Bretagne wat zorgt voor een overzeese smaak.</p>
+              <h2 class="spectitle uppercase">bretagne oysters</h2>
+              <p class="specdesc">Afgekookt met oesters van Bretagne wat zorgt voor een overzeese smaak.</p>
             </li>
             <li>
-              <h2>bittersweet finish</h2>
-              <p>Een bitterzoete stout die je naar meer laat smaken.</p>
+              <h2 class="spectitle uppercase">bittersweet finish</h2>
+              <p class="specdesc">Een bitterzoete stout die je naar meer laat smaken.</p>
             </li>
           </ul>
           <picture>
@@ -125,27 +136,30 @@
         </article>
       </div>
     </section>
-    <section class="beerproject">
-      <h2 class="landing-title">Our Brussels Beer Project</h2>
-      <picture>
-        <source srcset="" type="image/webp">
-        <source srcset="" type="image/png">
-        <img src="" alt="underliner">
-      </picture>
-      <article class="beerproject-text">
-        <p class="beerproject-p">
-          Brussels Beer Project - in een paar woorden? Innovatie
-          en durf op basis van samenwerking en co-creatie.
-          We willen een frisse wind brengen in de
-          soms te conservatieve Belgische bierwereld !
-        </p>
-        <p class="beerproject-p">
-          We ademen het hedendaagse Brussel,
-          een kosmopolitische stad die beweegt en evolueert.
-          De kracht van België was altijd een zoektocht naar smaak.
-        </p>
-      </article>
-      <a class="link-try">ontdek het project</a>
+    <section class="bbp">
+      <div class="bbp-container">
+        <article class="beerproject-text">
+          <h2 class="bbp-title">Our Brussels Beer Project</h2>
+          <div class="underline-bbp"></div>
+          <p class="beerproject-p">
+            Brussels Beer Project - in een paar woorden? <span class="highlight">Innovatie</span>
+            en durf op basis van samenwerking en <span class="highlight">co-creatie.</span>
+            We willen een frisse wind brengen in de
+            soms te conservatieve Belgische bierwereld !
+          </p>
+          <p class="beerproject-p">
+            We ademen het hedendaagse <span class="highlight">Brussel</span>,
+            een kosmopolitische stad die beweegt en evolueert.
+            De kracht van België was altijd een <span class="highlight">zoektocht naar smaak</span>.
+          </p>
+        </article>
+          <a class="link-try projectlink uppercase" target="_blank" href="http://www.brusselsbeerproject.be">ontdek het project</a>
+        <picture class="mannekepis">
+          <source srcset="assets/img/mannekepis.webp" type="image/webp">
+          <source srcset="assets/img/mannekepis.png" type="image/png">
+          <img src="assets/img/mannekepis.png" alt="manneke pis">
+        </picture>
+      </div>
     </section>
     <section class="newyear">
       <h2 class="newyear-title">make your new year with babeleir</h2>
@@ -181,52 +195,64 @@
           En maak kans om te winnen
         </span>
       </article>
-      <form action="/action_page.php" method="get">
-        <div>
-          <div>
-            <input type="text" name="voornaam"><br>
+      <form class="newyearform" action="" method="">
+        <div class="row">
+          <div class="column">
+            <span class="inputtoplabel uppercase">Voornaam</span>
+            <input class="forminput" type="text" name="voornaam"><br>
           </div>
-          <div>
-            <input type="text" name="achternaam"><br>
-          </div>
-        </div>
-        <div>
-          <div>
-            <input type="text" name="email"><br>
-          </div>
-          <div>
-            <input type="text" name="gsm"><br>
+          <div class="column">
+            <span class="inputtoplabel uppercase">Achternaam</span>
+            <input class="forminput" type="text" name="achternaam"><br>
           </div>
         </div>
-        <div>
-          <div>
-            <input type="text" name="straat"><br>
+        <div class="row">
+          <div class="column">
+            <span class="inputtoplabel uppercase">email</span>
+            <input class="forminput" type="text" name="email"><br>
           </div>
-          <div>
-            <input type="text" name="huisnummer"><br>
-          </div>
-        </div>
-        <div>
-          <div>
-            <input type="text" name="stad"><br>
-          </div>
-          <div>
-            <input type="text" name="postcode"><br>
+          <div class="column">
+            <span class="inputtoplabel uppercase">gsm</span>
+            <input class="forminput" type="text" name="gsm"><br>
           </div>
         </div>
-        <div>
-          <div>
-            <input type="text" name="aantal"><br>
+        <div class="row">
+          <div class="column">
+            <span class="inputtoplabel uppercase">straat</span>
+            <input class="forminput" type="text" name="straat"><br>
           </div>
-          <div>
-            <input type="text" name="upload"><br>
+          <div class="column">
+            <span class="inputtoplabel uppercase">nummer</span>
+            <input class="forminput" type="text" name="huisnummer"><br>
+          </div>
+        </div>
+        <div class="row">
+          <div class="column">
+            <span class="inputtoplabel uppercase">stad</span>
+            <input class="forminput" type="text" name="stad"><br>
+          </div>
+          <div class="column">
+            <span class="inputtoplabel uppercase">postcode</span>
+            <input class="forminput" type="text" name="postcode"><br>
+          </div>
+        </div>
+        <div class="row">
+          <div class="column">
+            <span class="inputtoplabel uppercase">Aantal personen</span>
+            <input class="forminput" type="text" name="aantal"><br>
+          </div>
+          <div class="column">
+            <span class="inputtoplabel uppercase">upload je kickass foto</span>
+            <input class="forminput" type="text" name="upload"><br>
           </div>
         </div>
         <input type="submit" value="Submit">
       </form>
     </section>
   </main>
-
+<footer class="bbp-footer">
+  allo
+</footer>
 </body>
 
 </html>
